@@ -1,0 +1,166 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.container h1 {
+    font-size: 2em;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+}
+
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.input, .textarea {
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    font-size: 1em;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s;
+}
+
+.textarea {
+    height: 285px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input:focus, .textarea:focus {
+    border-color: #495057;
+    outline: none;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.priority {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.priority-btn {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1em;
+    color: #fff;
+    background-color: #adb5bd;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.priority-btn.selected {
+    background-color: #007bff;
+    transform: scale(1.05);
+}
+
+.priority-btn:hover {
+    background-color: #6c757d;
+}
+
+
+.employees {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    font-size: 1em;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.list-employees {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.employee-box {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #e9ecef;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.employee-box.selected {
+    background-color: #007bff;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.employee-box:hover {
+    background-color: #adb5bd;
+}
+
+.employee-job {
+    font-size: 0.7em;
+}
+
+
+.selected-employees-list {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    max-height: 60px;
+}
+
+.selected-employees {
+    padding: 3px 8px;
+    margin: 2px;
+    border-radius: 8px;
+    background-color: #f8d7da;
+    font-size: 0.7em;
+}
+
+
+.btn-send {
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    margin-top: 20px;
+}
+
+.btn-send:hover {
+    background-color: #218838;
+    transform: scale(1.01);
+}

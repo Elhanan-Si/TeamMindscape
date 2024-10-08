@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification Code</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #4CAF50;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+        }
+        .verification-code {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border: 1px dashed #4CAF50;
+        }
+        .instructions {
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        .link-button {
+            display: block;
+            width: 200px;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #ffffff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #777;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>TeamMindscape</h1>
+        </div>
+        <div class="content">
+            <p>Hello,</p>
+            <p>We received a request to reset your password. Please use the following verification code to proceed:</p>
+            <div class="verification-code">
+                {{code}}
+            </div>
+            <div class="instructions">
+                <p>Enter this code in the application to verify your email address and reset your password.</p>
+                <p>If you did not request a password reset, please ignore this email. The verification code will expire in 15 minutes.</p>
+            </div>
+            <a href="https://www.yoursite.com" class="link-button">Go to TeamMindscape</a>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 TeamMindscape. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

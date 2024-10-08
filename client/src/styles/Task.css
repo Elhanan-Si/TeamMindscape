@@ -1,0 +1,99 @@
+/* task.css */
+
+.task-container {
+  display: flex;
+  max-width: 46%;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 8px solid #d1d5db;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 10px;
+  gap: 0.5rem;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.task-container:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.task-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 32px;
+  width: 250px;
+}
+
+.task-info {
+  margin-bottom: 16px;
+}
+
+.task-detail {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.task-button {
+  padding: 8px 12px;
+  background-color: #4299e1;
+  color: white;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out;
+  border: none;
+  cursor: pointer;
+}
+
+.task-button:hover {
+  background-color: #2b6cb0;
+}
+
+.task-right {
+  width: 500px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.task-priority {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 12px;
+  height: 12px;
+  background-color: #f56565;
+  border-radius: 50%;
+}
+
+.task-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.task-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.task-body {
+  overflow-y: auto;
+  max-height: 120px;
+  font-size: 0.875rem;
+}
+  

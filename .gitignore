@@ -1,0 +1,4 @@
+# קבצים ותיקיות להימנע מהכללה
+/server/node_modules
+/server/.env
+/client/node_modules

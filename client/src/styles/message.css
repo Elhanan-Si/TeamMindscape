@@ -1,0 +1,65 @@
+/* message.css */
+
+.message-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  z-index: 1000;
+}
+
+.message-warning {
+  border: 2px solid red;
+}
+
+.message-confirmation {
+  border: 2px solid green;
+}
+
+.message-text {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.message-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.message-button {
+  padding: 8px 16px;
+  margin: 4px;
+  border-radius: 4px;
+  transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.message-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.button-gray {
+  background-color: gray;
+  color: white;
+}
+
+.button-blue {
+  background-color: blue;
+  color: white;
+}
+
+.message-button:hover {
+  opacity: 0.75;
+}
+  

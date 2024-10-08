@@ -1,0 +1,116 @@
+/* TasksPage.css */
+
+.task-page-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.add-task-button, .send-tasks-button {
+    position: absolute;
+    right: 30px;
+    top: 110px;
+    background-color: #63b3ed;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-task-button:hover, .send-tasks-button:hover {
+    background-color: #fc8181;
+    transform: scale(0.96);
+}
+
+.send-tasks-button {
+    right: 180px;
+}
+
+
+.sorting-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background-color: #f9fafb;
+    margin-bottom: 16px;
+}
+
+.urgency-filter, .completion-filter, .sort-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.filter-group, .sort-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filter-label, .sort-group label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background-color: #f1f5f9;
+    transition: background-color 0.3s;
+}
+
+.filter-label:hover, .sort-group label:hover {
+    background-color: #e2e8f0;
+}
+
+.urgency-high {
+    background-color: #f87171;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.urgency-medium {
+    background-color: #fb923c;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.urgency-low {
+    background-color: #34d399;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.completion-filter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sort-options {
+    display: flex;
+    gap: 16px;
+}
+
+.tasks-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-between;
+}

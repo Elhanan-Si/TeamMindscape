@@ -1,0 +1,44 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+}
+
+.employee-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 1rem auto;
+    background-color: white;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.employee-information,
+.employee-statistics {
+    margin-top: 1rem;
+}
+
+.employee-information .value,
+.employee-statistics .value {
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+.divider {
+    height: 1px;
+    background-color: #ccc;
+    margin: 1rem 0;
+}

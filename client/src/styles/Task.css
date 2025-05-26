@@ -22,6 +22,12 @@
   width: 20px;
   height: 20px;
   cursor: pointer;
+  transition: all 0.3s;
+}
+
+.icon:hover {
+  width: 23px;
+  height: 23px;
 }
 
 .task-container:hover {

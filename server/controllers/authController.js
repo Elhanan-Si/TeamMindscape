@@ -45,7 +45,7 @@ const verifyToken = async (req, res) => {
     }
     
     try {
-        const decoded = jwt.verify(token, process.env.JWT_SECRET); 
+        const decoded = jwt.verify(token, process.env.JWT_SECRET);
         return res.json({ authenticated: true, user: decoded });
     } catch (error) {
         return res.status(401).json({ authenticated: false });

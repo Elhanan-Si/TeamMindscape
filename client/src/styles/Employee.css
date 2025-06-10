@@ -42,3 +42,70 @@ body {
     background-color: #ccc;
     margin: 1rem 0;
 }
+
+.time-frame-buttons {
+    display: flex;
+    gap: 0.5rem;
+    background: white;
+    padding: 0.25rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.time-frame-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: transparent;
+    color: #64748b;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.time-frame-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: currentColor;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.time-frame-btn:hover {
+    color: #3b82f6;
+}
+
+.time-frame-btn:hover::before {
+    opacity: 0.1;
+}
+
+.time-frame-btn.active {
+    background: #3b82f6;
+    color: white;
+}
+
+.time-frame-btn.active:hover {
+    background: #2563eb;
+    transform: translateY(-1px);
+}
+
+.time-frame-btn.active::before {
+    opacity: 0;
+}
+
+.stats-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.employee-statistics {
+    margin-top: 1rem;
+}
